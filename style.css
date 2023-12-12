@@ -12,7 +12,7 @@
  
 /* Floating Menu */
 
-.wrapper {overflow: auto;}
+/* .wrapper {overflow: auto;}
 
 #main {margin-left: 4px;}
 
@@ -35,12 +35,48 @@
   padding: 2px;
 }
 
-@media screen and (min-width: 1000px) {
+@media(min-width: 1000px) {
   #leftsidebar {
     width: 200px; 
     float: left;
   }
   #main {
     margin-left: 216px;
+  }
+} */
+
+/* Responsive Navigation Menu */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
   }
 }
